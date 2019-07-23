@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Baking App</string>
+    <string name="title_activity_recipe_details">RecipeDetailsActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_ingredients">Ingredients</string>
+    <string name="title_steps">Steps</string>
+    <string name="title_mynotes">My Notes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="no_ingredients">There is no baking selected.</string>
+    <string name="nextStep">Next</string>
+    <string name="previousStep">Previous</string>
+    <string name="noVideo">No Video</string>
+    <string name="playbutton_desc">Play</string>
+    <string name="pause_desc">Pause</string>
+    <string name="thumb_desc">Baking Thumbail</string>
+    <string name="ingredients">Ingredient(s)</string>
+    <string name="servings">Servings</string>
+    <string name="steps">Step(s)</string>
+    <string name="error_msg">Error loading recipes from the server.</string>
+</resources>

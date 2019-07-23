@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activities.RecipeDetailsActivity"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <FrameLayout
+            android:id="@+id/recipeDetails_container"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <FrameLayout
+            android:id="@+id/recipeDetails_land_step_details"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+
+        />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+   <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.StepFragment">
+
+
+       <TextView
+           android:id="@+id/textView3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="8dp"
+           android:layout_marginLeft="8dp"
+           android:text="@string/noVideo"
+           app:layout_constraintBottom_toBottomOf="@+id/Step_Fragment_ExoPlayer"
+           app:layout_constraintEnd_toEndOf="@+id/Step_Fragment_ExoPlayer"
+           app:layout_constraintStart_toStartOf="@+id/Step_Fragment_ExoPlayer"
+           app:layout_constraintTop_toTopOf="@+id/Step_Fragment_ExoPlayer" />
+
+       <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+           android:id="@+id/Step_Fragment_ExoPlayer"
+
+           android:layout_width="0dp"
+           android:layout_height="200dp"
+           android:layout_marginStart="8dp"
+           android:layout_marginLeft="8dp"
+           android:layout_marginTop="8dp"
+           android:layout_marginEnd="8dp"
+           android:layout_marginRight="8dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent">
+
+
+       </com.google.android.exoplayer2.ui.SimpleExoPlayerView>
+
+       <ImageView
+           android:id="@+id/thumbai_imageview"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="8dp"
+           android:layout_marginLeft="8dp"
+           android:layout_marginTop="8dp"
+           android:contentDescription="@string/thumb_desc"
+           app:layout_constraintEnd_toEndOf="@+id/Step_Fragment_ExoPlayer"
+           app:layout_constraintHorizontal_bias="0.488"
+           app:layout_constraintStart_toStartOf="@+id/Step_Fragment_ExoPlayer"
+           app:layout_constraintTop_toBottomOf="@+id/Step_Fragment_ExoPlayer" />
+
+       <TextView
+           android:id="@+id/Step_Fragment_textview"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="8dp"
+           android:layout_marginEnd="8dp"
+           android:layout_marginRight="8dp"
+           android:text="@string/hello_blank_fragment"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="@+id/Step_Fragment_ExoPlayer"
+           app:layout_constraintTop_toBottomOf="@id/Step_Fragment_ExoPlayer" />
+
+       <Button
+           android:id="@+id/fragmentStep_nextButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginEnd="8dp"
+           android:layout_marginRight="8dp"
+           android:layout_marginBottom="8dp"
+           android:text="@string/nextStep"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent" />
+
+       <Button
+           android:id="@+id/fragmentStep_previousButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="8dp"
+           android:layout_marginLeft="8dp"
+           android:layout_marginBottom="8dp"
+           android:text="@string/previousStep"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintStart_toStartOf="parent" />
+
+       <ScrollView
+           android:layout_width="0dp"
+           android:layout_height="0dp"
+           android:layout_marginStart="8dp"
+           android:layout_marginLeft="8dp"
+           android:layout_marginTop="8dp"
+           android:layout_marginEnd="8dp"
+           android:layout_marginRight="8dp"
+           android:layout_marginBottom="8dp"
+           app:layout_constraintBottom_toTopOf="@+id/fragmentStep_nextButton"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/Step_Fragment_textview">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/fragmentStep_detailsTextView"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                  />
+           </LinearLayout>
+       </ScrollView>
+
+       <TextView
+           android:id="@+id/fragmentStep_currentStepButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="8dp"
+           android:layout_marginLeft="8dp"
+           android:layout_marginEnd="8dp"
+           android:layout_marginRight="8dp"
+           android:layout_marginBottom="8dp"
+
+           app:layout_constraintBottom_toBottomOf="@+id/fragmentStep_nextButton"
+           app:layout_constraintEnd_toStartOf="@+id/fragmentStep_nextButton"
+           app:layout_constraintStart_toEndOf="@+id/fragmentStep_previousButton"
+           app:layout_constraintTop_toTopOf="@+id/fragmentStep_nextButton" />
+
+   </android.support.constraint.ConstraintLayout>
+</layout>
